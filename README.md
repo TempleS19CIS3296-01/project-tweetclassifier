@@ -6,7 +6,7 @@
 </ul>
 <br>
 <h2>Project Relevance:</h2>
-<p>This project is relevant to the class because it involves object oriented programming, utilizing API's, doing software development in with agile, utilizing a database, and potentially adding parallelism (although cloud computing will abstract all of this most likely).John's experience is in the python programming language and a high level understanding of neural networks. Qunchao's experience is in databases. Both team members will be new to the TensorFlow library and cloud computing with Google Collaboration.</p><br>
+<p>This project is relevant to the class because it involves object oriented programming, utilizing API's, doing software development in with agile, utilizing a database, and potentially adding parallelism (although cloud computing will abstract all of this most likely). John's experience is in the python programming language and a high level understanding of neural networks. Qunchao's experience is in databases. Both team members will be new to the TensorFlow library and cloud computing with Google Collaboration.</p><br>
   
 <h2>Goals and Milestones</h2>
 <ul>
