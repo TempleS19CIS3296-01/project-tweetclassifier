@@ -1,3 +1,6 @@
+<h2>Project board link:</h2>
+https://github.com/TempleS19CIS3296-01/project-tweetneurelnetwork/projects/1
+
 <h2>Part 1:</h2>
 <h3><Team Members:</h3>
 <ul>
