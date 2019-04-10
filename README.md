@@ -42,6 +42,6 @@ https://github.com/TempleS19CIS3296-01/project-tweetneurelnetwork/projects/1
 <h2>MILESTONES:</h2>
 <ul>
   <li>Set up environment: This took under an hour. It simply involved downloading python3, the data set we are working with, and a few libraries with pip.</li>
-  <li>Implement Naive Bayes Method on the data: This took 6-8 hours. First I had to learn what naive bayes was, which is a stochastic </li>
+  <li>Implement Naive Bayes Method on the data: This took 6-8 hours. First I had to learn what naive bayes was, which is a stochastic method for classifying things using Baye's theorem. Then I had to learn how to clean my data. Surprisingly, this was quite difficult because my data set is just one massive csv file with 800k postively rated tweets followed by 800k negatively rated tweets. After the data was "cleaned", cleaned here means that I was able to feed it properly to the sklearn library, and I trained a gaussian distribution based model with sklearn, I received 64% approximation. I was happy with anything over 50%. After tweaking the parameters I got up to 67.5% approximation, well above the 50% baseline.</li>
 </ul>
 
