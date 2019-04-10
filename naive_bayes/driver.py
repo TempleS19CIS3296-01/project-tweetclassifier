@@ -2,7 +2,8 @@ from parse_data import build_data, extract_features
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
 
-DATA_DIR = "sentiment140"
+MAIN_FILE = "training.1600000.processed.noemoticon.csv"
+DATA_DIR = "sentiment140/tweetdata01.csv"
 
 if __name__=='__main__':
     print("Building data")
