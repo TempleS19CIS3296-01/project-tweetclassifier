@@ -38,3 +38,10 @@ https://github.com/TempleS19CIS3296-01/project-tweetneurelnetwork/projects/1
 </ul>
 <p>We plan to use an agile based software development strategy. From the work plan above, we want to build this project in iterations. First by learning how to build a neural network with tensorflow, then building the neural network, then storing the weights from a good neural network in a database, then building UI.</p>
 
+
+<h2>MILESTONES:</h2>
+<ul>
+  <li>Set up environment: This took under an hour. It simply involved downloading python3, the data set we are working with, and a few libraries with pip.</li>
+  <li>Implement Naive Bayes Method on the data: This took 6-8 hours. First I had to learn what naive bayes was, which is a stochastic </li>
+</ul>
+
