@@ -8,15 +8,11 @@ data = {}
 MOST_COMMON = 3000 #this is the number of most common words to be analyzed in the model
 delete_symbols = False #a boolean to check if symbols should be deleted from data
 NUM_TWEETS = 100000 #this is the size of the dataset
-NUM_TESTS = 25000
-factor = 16 #had to reduce dataset by a factor of 1k
+NUM_TESTS = 10000
+factor = 1 #factor by which we are reducing the matrice
 #creates dictionary of most common N words and their corresponding frequency
 def build_data(data_dir):
     all_words = []
-    
-    data_dir += "/"
-    data_dir += ''.join(os.listdir(data_dir))
-    #data_dir = path of data file
 
     #opening and parsing file
     with open(data_dir, 'r', encoding="ISO-8859-1") as csv_file:
@@ -44,9 +40,7 @@ def build_data(data_dir):
         count += 1
 
 def extract_features(data_dir):
-    data_dir += "/"
-    data_dir += ''.join(os.listdir(data_dir))
-    #data_dir = path of data file
+
 
     train_matrix = np.zeros((NUM_TWEETS-NUM_TESTS, MOST_COMMON))
     train_labels = np.zeros(NUM_TWEETS-NUM_TESTS)
@@ -80,7 +74,4 @@ def extract_features(data_dir):
                     train_count += 1
                 counter += 1    
     return train_matrix, train_labels, test_matrix, test_labels    
-    
 
-build_data("sentiment140")
-extract_features("sentiment140")
