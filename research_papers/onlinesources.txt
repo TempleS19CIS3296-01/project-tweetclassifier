@@ -1,0 +1,6 @@
+1. naive bayes theorem for classification
+http://dataaspirant.com/2017/02/06/naive-bayes-classifier-machine-learning/
+
+https://medium.com/machine-learning-101/chapter-1-supervised-learning-and-naive-bayes-classification-part-1-theory-8b9e361897d5
+
+https://medium.com/machine-learning-101/chapter-1-supervised-learning-and-naive-bayes-classification-part-2-coding-5966f25f1475
