@@ -18,7 +18,8 @@ def build_data(data_dir):
     for file in tweet_files:
         with open(file, 'r', encoding="ISO-8859-1") as csv_file:
             reader = csv.reader(csv_file)
-            all_words += row[5].split()
+            for row in reader:
+                all_words += row[5].split()
 
     dictionary = Counter(all_words) #returns counter object of all words
 
