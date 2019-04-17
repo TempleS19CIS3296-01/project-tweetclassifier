@@ -7,16 +7,16 @@ test_dir = "test_data/"
 
 if __name__=='__main__':
     print("Building data")
-    #build_data(train_dir)
-    build_data(test_dir)
+    build_data(train_dir)
+
     print("Extracting features")
-    train_matrix, train_labels = extract_features(test_dir)
-    #test_matrix, test_labels = extract_features(test_dir)
+    train_matrix, train_labels = extract_features(train_dir)
+    test_matrix, test_labels = extract_features(test_dir)
 
     model = GaussianNB()
     model.fit(train_matrix, train_labels)
 
 
     # Predicting
-    predicted_labels = model.predict(train_matrix)
-    print('Accuracy:', accuracy_score(train_labels, predicted_labels) * 100)
+    predicted_labels = model.predict(test_matrix)
+    print('Accuracy:', accuracy_score(test_labels, predicted_labels) * 100)
