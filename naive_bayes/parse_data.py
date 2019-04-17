@@ -55,7 +55,7 @@ def extract_features(data_dir):
                 line = row[5].split()
                 for word in line:
                     if word in data:
-                        test_matrix[tweet_count, data[word]] = line.count(word)
+                        matrix[tweet_count, data[word]] = line.count(word)
                 labels[tweet_count] = int(row[0])
                 tweet_count+=1 
     return matrix, labels  
