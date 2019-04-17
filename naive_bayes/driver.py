@@ -11,11 +11,14 @@ if __name__=='__main__':
 
     print("Extracting features")
     train_matrix, train_labels = extract_features(train_dir)
-    test_matrix, test_labels = extract_features(test_dir)
 
     model = GaussianNB()
     model.fit(train_matrix, train_labels)
 
+    train_matrix = 1
+    train_labels = 1
+    
+    test_matrix, test_labels = extract_features(test_dir)
 
     # Predicting
     predicted_labels = model.predict(test_matrix)
