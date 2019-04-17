@@ -2,21 +2,21 @@ from parse_data import build_data, extract_features
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
 
-MAIN_FILE = "training.1600000.processed.noemoticon.csv"
-DATA_DIR = "sentiment140/tweetdata01.csv"
+train_dir = "train_data/"
+test_dir = "test_data/"
 
 if __name__=='__main__':
     print("Building data")
-    build_data(DATA_DIR)
+    build_data(train_dir)
 
     print("Extracting features")
-    training_feature, training_labels, testing_features, testing_labels = extract_features(DATA_DIR)
-    
+    train_matrix, train_labels = extract_features(train_dir)
+    test_matrix, test_labels = extract_features(test_dir)
 
     model = GaussianNB()
-    model.fit(training_feature, training_labels)
+    model.fit(train_matrix, train_labels)
 
 
     # Predicting
-    predicted_labels = model.predict(testing_features)
-    print('Accuracy:', accuracy_score(testing_labels, predicted_labels) * 100)
+    predicted_labels = model.predict(test_matrix)
+    print('Accuracy:', accuracy_score(test_labels, predicted_labels) * 100)
