@@ -14,6 +14,8 @@ if __name__=='__main__':
 
     model = GaussianNB()
     model.fit(train_matrix, train_labels)
+    p_l2 =model.predict(train_matrix)
+    print('Accuracy of train predictions:', accuracy_score(train_labels, p_l2) * 100)
 
     train_matrix = 1
     train_labels = 1
@@ -24,5 +26,3 @@ if __name__=='__main__':
     predicted_labels = model.predict(test_matrix)
     print('Accuracy of test predictions:', accuracy_score(test_labels, predicted_labels) * 100)
 
-    p_l2 =model.predict(train_matrix)
-    print('Accuracy of train predictions:', accuracy_score(train_labels, p_l2) * 100)
