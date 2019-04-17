@@ -22,4 +22,7 @@ if __name__=='__main__':
 
     # Predicting
     predicted_labels = model.predict(test_matrix)
-    print('Accuracy:', accuracy_score(test_labels, predicted_labels) * 100)
+    print('Accuracy of test predictions:', accuracy_score(test_labels, predicted_labels) * 100)
+
+    p_l2 =model.predict(train_matrix)
+    print('Accuracy of train predictions:', accuracy_score(train_labels, p_l2) * 100)
