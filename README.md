@@ -50,4 +50,5 @@ https://github.com/TempleS19CIS3296-01/project-tweetneurelnetwork/projects/1
 
 <li>Fragment data into 16 seperate files: This took about 2 hours. The first part was making sure I properly fragmented the data into 16 files. That means putting 50k positive then 50k negative tweets into 16 seperate files. The longest part was testing. Firstly, I tested to make sure the length of each file was 100k. Then I made sure each file had 50k positive and 50k negative tweets. Lastly, I made sure the tweet id, which is a unique id assigned to a tweet, was different across all files, therefore confirming that each tweet in each file is unique. From all of that I was able to conclude that the file was fragmented properly and I was finally ale to upload the data set to github.</li>
 
+<li>Implement google colab on naive bayes model: This took about 4 hours. Google colab was a decently tricky environment to get comftorable with. Firstly, I had to figure out how to actually get the code I wanted into google colab. This was the hardest part that required a good amount of research. Then I had to get accustomed to the environment.</li>
 </ul>
