@@ -22,5 +22,9 @@ if __name__=='__main__':
 
     # Predicting
     predicted_labels = model.predict(test_matrix)
+    if 1 in predicted_labels:
+        print("What")
+    elif 4 in predicted_labels:
+        print("good")
     print('Accuracy of test predictions:', accuracy_score(test_labels, predicted_labels) * 100)
 
