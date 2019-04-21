@@ -1,9 +1,21 @@
-1. naive bayes theorem for classification
+1. naive bayes for classification
+
 http://dataaspirant.com/2017/02/06/naive-bayes-classifier-machine-learning/
 
 https://medium.com/machine-learning-101/chapter-1-supervised-learning-and-naive-bayes-classification-part-1-theory-8b9e361897d5
 
 https://medium.com/machine-learning-101/chapter-1-supervised-learning-and-naive-bayes-classification-part-2-coding-5966f25f1475
 
+https://scikit-learn.org/stable/modules/naive_bayes.html
+
 2. google colab
+
 https://medium.com/@yuraist/how-to-upload-your-own-dataset-into-google-colab-e228727c87e9
+
+3. decision trees for classification
+
+https://scikit-learn.org/stable/modules/tree.html#tree-regression
+
+4. neural networks
+
+5. twitter api
