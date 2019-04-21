@@ -5,7 +5,7 @@ import numpy as np
 
 data = {}
 
-MOST_COMMON = 400000  #this is the number of most common words to be analyzed in the model
+MOST_COMMON = 4000  #this is the number of most common words to be analyzed in the model
 delete_symbols = False #a boolean to check if symbols should be deleted from data
 TWEETS_PER_FILE = 100000 #number of tweets in a file
 
