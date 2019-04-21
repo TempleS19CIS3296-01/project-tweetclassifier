@@ -22,7 +22,21 @@ https://medium.com/@chiragsehra42/decision-trees-explained-easily-28f23241248
 
 4. neural networks
 
+https://en.wikipedia.org/wiki/Artificial_neural_network
+
+https://skymind.ai/wiki/neural-network
+
+https://morvanzhou.github.io/tutorials/machine-learning/tensorflow/
+
 5. twitter api
+
+https://developer.twitter.com/en.html
+
+https://tweepy.readthedocs.io/en/v3.5.0/
+
+http://blog.aylien.com/build-a-sentiment-analysis-tool-for-twitter-with-this-simple-python-script/
+
+http://help.sentiment140.com/for-students
 
 6. classification vs. regression and machine learning fundamentals
 
