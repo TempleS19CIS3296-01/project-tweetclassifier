@@ -1,6 +1,5 @@
 from parse_data import build_data, extract_features
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.naive_bayes import ComplementNB
 from sklearn.metrics import accuracy_score
 
 train_dir = "train_data/"
@@ -13,8 +12,7 @@ if __name__=='__main__':
     print("Extracting features")
     train_matrix, train_labels = extract_features(train_dir)
 
-   # model = MultinomialNB()
-    model = ComplementNB()
+    model = MultinomialNB()
     model.fit(train_matrix, train_labels)
     p_l2 =model.predict(train_matrix)
     print('Accuracy of train predictions:', accuracy_score(train_labels, p_l2) * 100)
