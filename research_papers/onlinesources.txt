@@ -16,6 +16,16 @@ https://medium.com/@yuraist/how-to-upload-your-own-dataset-into-google-colab-e22
 
 https://scikit-learn.org/stable/modules/tree.html#tree-regression
 
+https://en.proft.me/2016/11/9/classification-using-decision-trees-r/
+
+https://medium.com/@chiragsehra42/decision-trees-explained-easily-28f23241248
+
 4. neural networks
 
 5. twitter api
+
+6. classification vs. regression and machine learning fundamentals
+
+https://machinelearningmastery.com/classification-versus-regression-in-machine-learning/
+
+https://machinelearningmastery.com/how-machine-learning-algorithms-work/
