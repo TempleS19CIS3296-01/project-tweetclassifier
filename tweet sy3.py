@@ -7,6 +7,8 @@ consumer_secret = "L5dKdHq3GQmtsSqJUW3r1OwVf9enpLVayR8WeiNqk6HtkDp4Ep"
 access_token = "723661697551097856-AXqOAdGblcHL2GnseiCdzLNA2c2YDY0"
 access_token_secret = "MvIC6QBEre2Fv19fMWG0l4JiUFPV4RUbZxYo17F34Swbi"
 
+twitter_name= input("insert the twitter user you want to analyze...  \n")
+
 def get_all_tweets(screen_name):
 	#Twitter only allows access to a users most recent 3240 tweets with this method
 	
@@ -56,4 +58,4 @@ def get_all_tweets(screen_name):
 
 if __name__ == '__main__':
 	#pass in the username of the account you want to download
-	get_all_tweets("twitter_name")
+	get_all_tweets(twitter_name)
