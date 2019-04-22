@@ -46,12 +46,13 @@ def get_all_tweets():
             oldest = alltweets[-1].id - 1
             
             print ("...%s tweets downloaded so far" % (len(alltweets)))
-    
+    print ("...%s tweets downloaded total" % (len(alltweets)))
+
     #transform the tweepy tweets into a 2D array that will populate the csv	
     outtweets = [["0",tweet.id_str, tweet.created_at,"NO_QUERY",screen_name, str(tweet.text.encode("utf-8"))[2:-1]] for tweet in alltweets]
     
     #write the csv	
-    with open('predict_data/%s_tweets.csv' % screen_name, 'w') as f:
+    with open('predict_data/tweets.csv', 'w') as f:
         writer = csv.writer(f)
         #writer.writerow(["targit","id","date","flag","user","text"])
         writer.writerows(outtweets)

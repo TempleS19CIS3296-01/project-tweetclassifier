@@ -1,6 +1,7 @@
 from parse_data import build_data, extract_features
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score
+from get_tweets import get_all_tweets
 
 train_dir = "train_data/"
 test_dir = "test_data/"
@@ -25,6 +26,8 @@ if __name__=='__main__':
     predicted_labels = model.predict(test_matrix)
     print('Accuracy of test predictions:', accuracy_score(test_labels, predicted_labels) * 100)
 
+
+    get_all_tweets()
     #making prediction on new data
     num_tweets = 3240
     to_predict_matrix, to_predict_tweets = extract_features(predict_dir, 3500, num_tweets)
