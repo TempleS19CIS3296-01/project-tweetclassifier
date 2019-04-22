@@ -39,4 +39,4 @@ if __name__=='__main__':
         else:
             print("Error")
     print("Percentage of last", num_tweets, "tweets that were positive:", pos/num_tweets)
-    print("Percentage of last", num_tweets, "tweets that were positive:", neg/num_tweets) 
+    print("Percentage of last", num_tweets, "tweets that were negative:", neg/num_tweets) 
