@@ -4,7 +4,7 @@ from sklearn.metrics import accuracy_score
 
 train_dir = "train_data/"
 test_dir = "test_data/"
-
+predict_dir = "predict_data/"
 if __name__=='__main__':
     print("Building data")
     build_data(train_dir)
@@ -22,6 +22,16 @@ if __name__=='__main__':
 
     # Predicting
     predicted_labels = model.predict(test_matrix)
- 
     print('Accuracy of test predictions:', accuracy_score(test_labels, predicted_labels) * 100)
 
+    to_predict_matrix, to_predict_tweets = extract_features(predict_dir)
+    prediction_labels_new_tweets = model.predict(to_predict_matrix)    
+    pos = 0
+    neg = 0
+    for label in prediction_labels_new_tweets:
+        if label == 0:
+            neg += 1
+        elif label == 4:
+            pos+=1
+        else:
+            print("Error")
