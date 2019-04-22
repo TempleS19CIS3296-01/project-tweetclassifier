@@ -27,9 +27,8 @@ if __name__=='__main__':
     print('Accuracy of test predictions:', accuracy_score(test_labels, predicted_labels) * 100)
 
 
-    get_all_tweets()
     #making prediction on new data
-    num_tweets = 3240
+    num_tweets = get_all_tweets()
     to_predict_matrix, to_predict_tweets = extract_features(predict_dir, 3500, num_tweets)
     prediction_labels_new_tweets = model.predict(to_predict_matrix)    
     pos = 0
