@@ -1,6 +1,7 @@
 from parse_data import build_data, extract_features
 from sklearn import tree
 from sklearn.metrics import accuracy_score
+from sklearn.ensemble import AdaBoostClassifier
 
 train_dir = "train_data/"
 test_dir = "test_data/"
@@ -12,7 +13,7 @@ if __name__=='__main__':
     print("Extracting features")
     train_matrix, train_labels = extract_features(train_dir)
 
-    model = tree.DecisionTreeClassifier()
+    model = AdaBoostClassifier(tree.DecisionTreeClassifier(), n_estimators=3500)
     model.fit(train_matrix, train_labels)
     p_l2 =model.predict(train_matrix)
     print('Accuracy of train predictions:', accuracy_score(train_labels, p_l2) * 100)

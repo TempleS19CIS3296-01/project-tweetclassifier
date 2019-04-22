@@ -1,0 +1,47 @@
+1. naive bayes for classification
+
+http://dataaspirant.com/2017/02/06/naive-bayes-classifier-machine-learning/
+
+https://medium.com/machine-learning-101/chapter-1-supervised-learning-and-naive-bayes-classification-part-1-theory-8b9e361897d5
+
+https://medium.com/machine-learning-101/chapter-1-supervised-learning-and-naive-bayes-classification-part-2-coding-5966f25f1475
+
+https://scikit-learn.org/stable/modules/naive_bayes.html
+
+2. google colab
+
+https://medium.com/@yuraist/how-to-upload-your-own-dataset-into-google-colab-e228727c87e9
+
+3. decision trees for classification
+
+https://scikit-learn.org/stable/modules/tree.html#tree-regression
+
+https://en.proft.me/2016/11/9/classification-using-decision-trees-r/
+
+https://medium.com/@chiragsehra42/decision-trees-explained-easily-28f23241248
+
+https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052
+
+4. neural networks
+
+https://en.wikipedia.org/wiki/Artificial_neural_network
+
+https://skymind.ai/wiki/neural-network
+
+https://morvanzhou.github.io/tutorials/machine-learning/tensorflow/
+
+5. twitter api
+
+https://developer.twitter.com/en.html
+
+https://tweepy.readthedocs.io/en/v3.5.0/
+
+http://blog.aylien.com/build-a-sentiment-analysis-tool-for-twitter-with-this-simple-python-script/
+
+http://help.sentiment140.com/for-students
+
+6. classification vs. regression and machine learning fundamentals
+
+https://machinelearningmastery.com/classification-versus-regression-in-machine-learning/
+
+https://machinelearningmastery.com/how-machine-learning-algorithms-work/
