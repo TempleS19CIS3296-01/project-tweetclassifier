@@ -8,7 +8,7 @@ predict_dir = "predict_data/"
 
 if __name__=='__main__':
     print("Building data")
-    build_data(train_dir)
+    build_data(train_dir, 3500)
 
     print("Extracting features")
     train_matrix, train_labels = extract_features(train_dir, 3500, 100000)
