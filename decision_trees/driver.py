@@ -13,7 +13,7 @@ if __name__=='__main__':
     print("Extracting features")
     train_matrix, train_labels = extract_features(train_dir)
 
-    model = svm.linearSVC(gamma='scale')
+    model = svm.LinearSVC(gamma='scale')
    # model = tree.DecisionTreeClassifier()
     model.fit(train_matrix, train_labels)
     p_l2 =model.predict(train_matrix)
