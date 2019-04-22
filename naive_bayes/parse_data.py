@@ -10,7 +10,6 @@ delete_symbols = False #a boolean to check if symbols should be deleted from dat
 #creates dictionary of most common N words and their corresponding frequency
 def build_data(data_dir, most_common):
     MOST_COMMON = most_common
-    TWEETS_PER_FILE = tweets_per_file
     
     all_words = []
 
