@@ -7,7 +7,7 @@ consumer_secret = "L5dKdHq3GQmtsSqJUW3r1OwVf9enpLVayR8WeiNqk6HtkDp4Ep"
 access_token = "723661697551097856-AXqOAdGblcHL2GnseiCdzLNA2c2YDY0"
 access_token_secret = "MvIC6QBEre2Fv19fMWG0l4JiUFPV4RUbZxYo17F34Swbi"
 
-GET_ALL_TWEETS = False
+GET_ALL_TWEETS = True
 
 def get_all_tweets():
     screen_name = input("insert the twitter user you want to analyze...  \n")

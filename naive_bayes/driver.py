@@ -26,7 +26,7 @@ if __name__=='__main__':
     print('Accuracy of test predictions:', accuracy_score(test_labels, predicted_labels) * 100)
 
     #making prediction on new data
-    num_tweets = 200
+    num_tweets = 3240
     to_predict_matrix, to_predict_tweets = extract_features(predict_dir, 3500, num_tweets)
     prediction_labels_new_tweets = model.predict(to_predict_matrix)    
     pos = 0
@@ -38,4 +38,5 @@ if __name__=='__main__':
             pos+=1
         else:
             print("Error")
-    print("Percentage of last", num_tweets, "tweets that were positive:", pos/num_tweets) 
+    print("Percentage of last", num_tweets, "tweets that were positive:", pos/num_tweets)
+    print("Percentage of last", num_tweets, "tweets that were positive:", neg/num_tweets) 
