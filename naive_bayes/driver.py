@@ -28,17 +28,21 @@ if __name__=='__main__':
 
 
     #making prediction on new data
-    num_tweets = get_all_tweets()
-    to_predict_matrix, to_predict_tweets = extract_features(predict_dir, 3500, num_tweets)
-    prediction_labels_new_tweets = model.predict(to_predict_matrix)    
-    pos = 0
-    neg = 0
-    for label in prediction_labels_new_tweets:
-        if label == 0:
-            neg += 1
-        elif label == 4:
-            pos+=1
-        else:
-            print("Error")
-    print("Percentage of last", num_tweets, "tweets that were positive:", pos/num_tweets)
-    print("Percentage of last", num_tweets, "tweets that were negative:", neg/num_tweets) 
+    answer = 1
+    while answer:
+        num_tweets = get_all_tweets()
+        to_predict_matrix, to_predict_tweets = extract_features(predict_dir, 3500, num_tweets)
+        prediction_labels_new_tweets = model.predict(to_predict_matrix)    
+        pos = 0
+        neg = 0
+        for label in prediction_labels_new_tweets:
+            if label == 0:
+                neg += 1
+            elif label == 4:
+                pos+=1
+            else:
+                print("Error")
+        print("Percentage of last", num_tweets, "tweets that were positive:", pos/num_tweets)
+        print("Percentage of last", num_tweets, "tweets that were negative:", neg/num_tweets) 
+        answer = int(input("Would you like to test a different twitter user?"))
+    
