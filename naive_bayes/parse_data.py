@@ -5,12 +5,13 @@ import numpy as np
 
 data = {}
 
-MOST_COMMON = 3500 #this is the number of most common words to be analyzed in the model
 delete_symbols = False #a boolean to check if symbols should be deleted from data
-TWEETS_PER_FILE = 100000 #number of tweets in a file
 
 #creates dictionary of most common N words and their corresponding frequency
-def build_data(data_dir):
+def build_data(data_dir, most_common, tweets_per_file):
+    MOST_COMMON = most_common
+    TWEETS_PER_FILE = tweets_per_file
+    
     all_words = []
 
     tweet_files = [data_dir+file for file in os.listdir(data_dir)]
