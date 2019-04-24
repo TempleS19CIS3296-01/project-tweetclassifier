@@ -1,3 +1,4 @@
+<h1>Tweet Classifier</h1>
 <h2>Project board link:</h2>
 https://github.com/TempleS19CIS3296-01/project-tweetneurelnetwork/projects/1
 
@@ -9,7 +10,7 @@ https://github.com/TempleS19CIS3296-01/project-tweetneurelnetwork/projects/1
 </ul>
 <br>
 <h2>Project Relevance:</h2>
-<p>This project is relevant to the class because it involves object oriented programming, utilizing API's, doing software development in with agile, utilizing a database, and potentially adding parallelism (although cloud computing will abstract all of this most likely). John's experience is in the python programming language and a high level understanding of neural networks. Qunchao's experience is in databases. Both team members will be new to the TensorFlow library and cloud computing with Google Collaboration.</p><br>
+<p>This project is relevant to the class because it involves object oriented programming, utilizing API's, doing software development  with agile, potentially utilizing a database, and potentially adding parallelism (although cloud computing will abstract all of this most likely). John's experience is in the python programming language and a high level understanding of neural networks. Qunchao's experience is in databases. Both team members will be new to the TensorFlow library and cloud computing with Google Collaboration. The project is a tweet classifier. We will implement various machine learning models to approximate tweet sentiment classifications and then allow users to scrape tweets from others and run those tweets through our model.</p><br>
 
 <h2>Sprints</h2>
 <h4>Sprint 1</h4>
