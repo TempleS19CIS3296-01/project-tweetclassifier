@@ -49,4 +49,11 @@ https://github.com/TempleS19CIS3296-01/project-tweetneurelnetwork/projects/1
   <li>
     Imporve naive bayes (John): This took a about 2 hours. I was experimenting with various distributions, as well as various parameters within those distributions. Doing so on google colab is time consuming because it requires one to edit code in a seperate environment, push it to github, pull it from github on google colab, and then rerun the code on google colab. This must be done every time a paramater is changed. The final distribution was multinomial and the final parameters were 3500 words in our vocabulary, 300k train tweets, 100k test tweets.
   </li>
+  <li>
+    Create user interface (Qunchao): This took about 4 hours. I had to first learn the twitter API and understand how it works, then I had to use it to fulfill the purposes of our project. I was able to successfully develop our requirements through a python library that accesses twitter called tweepy. With this library I was able to allow a user to enter a twitter handle and then parse their tweets. Then those tweets get written to a csv file in the same format as our training and testing data so those tweets can be run through the model
+  </li>
+  <li>
+    Merging it all together (John and Qunchao): This took about 3 hours. With Qunchao's twitter scraping code and John's machine learning model code, it was time to put it all together. Putting it together meant developing the control flow in such a way as to minimize RAM usage and allow the user the most options when testing the project.
+  </li>
+    
 </ul>
