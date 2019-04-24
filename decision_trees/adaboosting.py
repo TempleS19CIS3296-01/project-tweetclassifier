@@ -4,21 +4,21 @@ from sklearn.ensemble import AdaBoostClassifier
 from sklearn.metrics import accuracy_score
 from get_tweets import get_all_tweets
 
-train_dir = "train_data/"
-test_dir = "test_data/"
+train_dir = "small_train_data/"
+test_dir = "small_test_data/"
 predict_dir = "predict_data/"
 
 if __name__=='__main__':
     print("TRAINING WITH DECISION TREES")
     vocab_size = 2000
-    tweets_per_file = 20000
+    tweets_per_file = 4000
     print("Building data")
     build_data(train_dir, vocab_size)
 
     print("Extracting features")
     train_matrix, train_labels = extract_features(train_dir, vocab_size, tweets_per_file)
 
-    model = AdaBoostClassifier(DecisionTreeClassifier(), n_estimators=20,learning_rate = 1.5, algorithm="SAMME")
+    model = AdaBoostClassifier(DecisionTreeClassifier(), n_estimators=40,learning_rate = 1.5, algorithm="SAMME")
     
     model.fit(train_matrix, train_labels)
     p_l2 =model.predict(train_matrix)
