@@ -10,7 +10,7 @@ predict_dir = "predict_data/"
 
 if __name__=='__main__':
     print("TRAINING WITH ADABOOSTED DECISION TREES")
-    vocab_size = 1200
+    vocab_size = 2000
     tweets_per_file = 4000
     print("Building data")
     build_data(train_dir, vocab_size)
@@ -18,7 +18,7 @@ if __name__=='__main__':
     print("Extracting features")
     train_matrix, train_labels = extract_features(train_dir, vocab_size, tweets_per_file)
 
-    model = AdaBoostClassifier(DecisionTreeClassifier(), n_estimators=500,learning_rate = .5, algorithm="SAMME")
+    model = AdaBoostClassifier(DecisionTreeClassifier(), n_estimators=700,learning_rate = .5, algorithm="SAMME")
     
     model.fit(train_matrix, train_labels)
     p_l2 =model.predict(train_matrix)
