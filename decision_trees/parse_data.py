@@ -5,12 +5,12 @@ import numpy as np
 
 data = {}
 
-MOST_COMMON = 3000  #this is the number of most common words to be analyzed in the model
 delete_symbols = False #a boolean to check if symbols should be deleted from data
-TWEETS_PER_FILE = 100000 #number of tweets in a file
 
 #creates dictionary of most common N words and their corresponding frequency
-def build_data(data_dir):
+def build_data(data_dir, most_common):
+    MOST_COMMON = most_common
+    
     all_words = []
 
     tweet_files = [data_dir+file for file in os.listdir(data_dir)]
@@ -38,7 +38,10 @@ def build_data(data_dir):
         data[word[0]] = count
         count += 1
 
-def extract_features(data_dir):
+def extract_features(data_dir, most_common, tweets_per_file):
+    MOST_COMMON = most_common
+    TWEETS_PER_FILE = tweets_per_file
+    
     tweet_files = [data_dir+file for file in os.listdir(data_dir)]
 
     matrix = np.zeros((len(tweet_files)*TWEETS_PER_FILE, MOST_COMMON))
