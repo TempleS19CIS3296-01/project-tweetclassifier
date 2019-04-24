@@ -4,8 +4,8 @@ from sklearn.ensemble import AdaBoostClassifier
 from sklearn.metrics import accuracy_score
 from get_tweets import get_all_tweets
 
-train_dir = "train_data/"
-test_dir = "test_data/"
+train_dir = "small_train_data/"
+test_dir = "small_test_data/"
 predict_dir = "predict_data/"
 
 if __name__=='__main__':
