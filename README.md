@@ -20,7 +20,7 @@ https://github.com/TempleS19CIS3296-01/project-tweetneurelnetwork/projects/1
 <h4>Sprint 3</h4>
 <p> During the third spring, John and Qunchao continued to work seprately on their respective tasks. John continued with the naive bayes model but was now working in a different environment. John started to learn the google colab environment, a cloud computing service that was vitial to this project. After the google colab environment was successfully learned, the code then needed to be fragmented because it was only viable on a local device. This was not difficult but was tedious, as the whole data parsing method had to be changed which is the most tedious part of this project. Qunchao continued learning tensorflow in the attempt to learn how to utilize a neural network. During our scrum meeting, this was where we decided to abandon the neural network model and instead focus on UI.</p>
 <h4>Sprint 4</h4>
-<p> During the </p>
+<p> During the forth spring John and Qunchao combined their code to develop a final project. Qunchao worked on scraping tweets from the user and John continued improving the naive bayes model as well as implementing a new model called decision trees. John and Qunchao worked on refactoring the code in such a way that it could run on google colab in a ram efficient manner as well as allowing the user a good, non-annoying experience when running this code. </p>
 <h2>MILESTONES:</h2>
 <h4>Sprint 1</h4>
 <ul>
@@ -57,3 +57,10 @@ https://github.com/TempleS19CIS3296-01/project-tweetneurelnetwork/projects/1
   </li>
     
 </ul>
+
+<h2>Things we did not do</h2>
+<ul>
+  <li>Neural Network: We ultimately did not end up implementing the neural network. While John continued working on various machine learning algorithms, Qunchao was learning the tensorflow API and attempting to implement the neural network. As time constraints grew more concerning, we decided to abandon the neural network. We felt confident in doing to because in the research papers we read many researchers did not use neural networks, instead implementing models that we ultimitely used like naive bayes and decision trees. Also, we achieved 74% accurate approximations with naive bayes, which we felt was strong.</li>
+  <li>>80% accurate approximations: We ultimately could not get our models to greater than 80% approximations. This was a goal of ours because a research team at Stanford that utilized our data set got about 80% accurate approximations. We felt that was a good goal to strive for. Unfortunately we did not make it, ending at 74%. We still feel confident about this because we had no knowledge of machine learning before this and were able to do enough research to implement strong models that did an incredible thing, namely sentiment classification of tweets.</li>
+</ul>
+  
