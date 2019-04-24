@@ -11,7 +11,7 @@ predict_dir = "predict_data/"
 if __name__=='__main__':
     print("TRAINING WITH DECISION TREES")
     vocab_size = 2000
-    tweets_per_file = 20000
+    tweets_per_file = 4000
     print("Building data")
     build_data(train_dir, vocab_size)
 
