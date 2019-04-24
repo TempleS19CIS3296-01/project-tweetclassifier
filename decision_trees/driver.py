@@ -1,5 +1,5 @@
 from parse_data import build_data, extract_features
-from skleanr import tree
+from sklearn import tree
 from sklearn.metrics import accuracy_score
 from get_tweets import get_all_tweets
 
