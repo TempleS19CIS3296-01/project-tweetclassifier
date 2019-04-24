@@ -22,7 +22,7 @@ if __name__=='__main__':
     p_l2 =model.predict(train_matrix)
     print('Accuracy of train predictions:', accuracy_score(train_labels, p_l2) * 100)
 
-    
+    tweets_per_file = 6000
     test_matrix, test_labels = extract_features(test_dir, vocab_size, tweets_per_file)
 
     # Predicting on test data
