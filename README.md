@@ -57,6 +57,8 @@ https://github.com/TempleS19CIS3296-01/project-tweetneurelnetwork/projects/1
   <li>
     Merging it all together (John and Qunchao): This took about 3 hours. With Qunchao's twitter scraping code and John's machine learning model code, it was time to put it all together. Putting it together meant developing the control flow in such a way as to minimize RAM usage and allow the user the most options when testing the project.
   </li>
+  <li>
+    Implement AdaBoosting with decision trees (John): This took about 3 hours to write the code and tweak the parameters. Also, the csv file had to be fragmented to 4k tweets instead of 20k which was time consuming. Unfortunately the adaboosting model is not giving us higher accuracy approximations than the decision tree.</li>
     
 </ul>
 
