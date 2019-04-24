@@ -8,6 +8,7 @@ test_dir = "test_data/"
 predict_dir = "predict_data/"
 
 if __name__=='__main__':
+    print("TRAINING WITH NAIVE BAYES")
     vocab_size = 3500
     tweets_per_file = 100000
     print("Building data")
