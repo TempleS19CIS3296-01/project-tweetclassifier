@@ -1,29 +1,29 @@
 from parse_data import build_data, extract_features
-from sklearn import tree
+from skleanr import tree
 from sklearn.metrics import accuracy_score
-from sklearn.ensemble import AdaBoostClassifier
+from get_tweets import get_all_tweets
 
 train_dir = "train_data/"
 test_dir = "test_data/"
+predict_dir = "predict_data/"
 
 if __name__=='__main__':
     print("Building data")
-    build_data(train_dir)
+    build_data(train_dir, 2500)
 
     print("Extracting features")
-    train_matrix, train_labels = extract_features(train_dir)
+    train_matrix, train_labels = extract_features(train_dir, 2500, 20000)
 
-    model = AdaBoostClassifier(tree.DecisionTreeClassifier(), n_estimators=3500)
+    model = tree.DecisionTreeClassifier()
     model.fit(train_matrix, train_labels)
     p_l2 =model.predict(train_matrix)
     print('Accuracy of train predictions:', accuracy_score(train_labels, p_l2) * 100)
 
     
-    test_matrix, test_labels = extract_features(test_dir)
+    test_matrix, test_labels = extract_features(test_dir, 2500, 20000)
 
-    # Predicting
+    # Predicting on test data
     predicted_labels = model.predict(test_matrix)
-
     print('Accuracy of test predictions:', accuracy_score(test_labels, predicted_labels) * 100)
 
 
